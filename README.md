@@ -1,7 +1,5 @@
 # Gravatar Image Tag
 
-_Currently under devlopment_.
-
 An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
 ## Installation
