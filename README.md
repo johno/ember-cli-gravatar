@@ -27,7 +27,7 @@ $ npm install --save ember-cli-gravatar
 ## Usage
 
 ```hbs
-{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar'}}
+{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size="250"}}
 ```
 
 ## License
