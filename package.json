@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/johnotander/ember-cli-gravatar",
   "dependencies": {
-    "md5": "^1.0.0"
+    "blueimp-md5": "^1.1.0"
   }
 }
