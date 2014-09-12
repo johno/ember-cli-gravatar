@@ -7,6 +7,6 @@ module.exports = {
     this.app = app;
     this._super.included(app);
 
-    app.import("node_modules/blueimp-md5/md5.js");
+    app.import('bower_components/JavaScript-MD5/js/md5.js')
   }
 };

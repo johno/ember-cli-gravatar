@@ -10,12 +10,6 @@ First, you must install moment with [bower](http://bower.io):
 $ bower install --save JavaScript-MD5
 ```
 
-Add the following import to your Brocfile.js:
-
-```js
-app.import('vendor/JavaScript-MD5/js/md5.js');
-```
-
 Then, install ember-cli-gravatar:
 
 ```
