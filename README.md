@@ -4,7 +4,7 @@ An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
 ## Installation
 
-First, you must install moment with [bower](http://bower.io):
+First, you must install md5 with [bower](http://bower.io):
 
 ```
 $ bower install --save JavaScript-MD5
