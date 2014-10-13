@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     var email = this.get('email'),
         size = this.get('size');
 
-    return 'http://www.gravatar.com/avatar/' + md5(email) + '?s=' + size;
+    return '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size;
   }.property('email', 'size'),
 
   altText: function() {
