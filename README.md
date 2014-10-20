@@ -4,7 +4,7 @@ An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
 ## Installation
 
-You need to install the addon, then run the blueprint:
+You need to install the addon, then run the ember cli blueprint:
 
 ```
 $ npm install --save ember-cli-gravatar
