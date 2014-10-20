@@ -4,22 +4,11 @@ An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
 ## Installation
 
-First, you must install moment with [bower](http://bower.io):
-
-```
-$ bower install --save JavaScript-MD5
-```
-
-Add the following import to your Brocfile.js:
-
-```js
-app.import('vendor/JavaScript-MD5/js/md5.js');
-```
-
-Then, install ember-cli-gravatar:
+You need to install the addon, then run the ember cli blueprint:
 
 ```
 $ npm install --save ember-cli-gravatar
+$ ember g ember-cli-gravatar
 ```
 
 ## Usage
