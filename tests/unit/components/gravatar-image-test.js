@@ -9,8 +9,6 @@ moduleForComponent('gravatar-image', 'GravatarImageComponent', {
 });
 
 test('it renders', function() {
-  expect(2);
-
   // creates the component instance
   var component = this.subject();
   equal(component._state, 'preRender');
@@ -18,4 +16,11 @@ test('it renders', function() {
   // appends the component to the page
   this.append();
   equal(component._state, 'inDOM');
+});
+
+test('it is added to the page', function() {
+  var component = this.subject();
+  this.append();
+
+  ok($('img').length);
 });
