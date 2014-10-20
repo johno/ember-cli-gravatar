@@ -1,10 +1,12 @@
 {
   "name": "ember-cli-gravatar",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "An Ember helper for gravatar image tags. Integrates with ember-cli.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ember server",
+    "build": "ember build",
+    "test": "ember test"
   },
   "repository": {
     "type": "git",
@@ -14,7 +16,8 @@
     "ember-addon",
     "gravatar",
     "ember",
-    "avatar"
+    "avatar",
+    "ember-cli"
   ],
   "author": "John Otander <johnotander@gmail.com> (http://johnotander.com/)",
   "license": "MIT",

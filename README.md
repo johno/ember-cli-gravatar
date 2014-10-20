@@ -4,16 +4,11 @@ An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
 ## Installation
 
-First, you must install md5 with [bower](http://bower.io):
-
-```
-$ bower install --save JavaScript-MD5
-```
-
-Then, install ember-cli-gravatar:
+You need to install the addon, then run the blueprint:
 
 ```
 $ npm install --save ember-cli-gravatar
+$ ember g ember-cli-gravatar
 ```
 
 ## Usage
