@@ -1,5 +1,6 @@
 {
   "predef": [
+    "md5",
     "document",
     "window",
     "location",

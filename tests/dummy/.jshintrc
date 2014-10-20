@@ -1,9 +1,10 @@
 {
-  "predef": [
-    "document",
-    "window",
-    "-Promise"
-  ],
+  "predef": {
+    "md5": true,
+    "document": true,
+    "window": true,
+    "-Promise": true
+  },
   "browser" : true,
   "boss" : true,
   "curly": true,
