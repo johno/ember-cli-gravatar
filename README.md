@@ -19,6 +19,30 @@ $ ember g ember-cli-gravatar
 {{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size="250"}}
 ```
 
+### Content Security Policy
+
+With the latest versions of the Ember CLI, you will have to whitelist gravatar.com with the following
+in your `config/environment.js`:
+
+```javascript
+module.exports = function(environment) {
+  // ...
+  var ENV = {
+    // ...
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self'",
+      'font-src': "'self'",
+      'connect-src': "'self'",
+      'img-src': "'self' https://www.gravatar.com",
+      'style-src': "'self'",
+      'media-src': "'self'"
+    },
+    // ...
+  }
+  // ...
+```
+
 ## License
 
 MIT
