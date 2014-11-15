@@ -9,14 +9,14 @@ An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 You need to install the addon, then run the ember cli blueprint:
 
 ```
-$ npm install --save ember-cli-gravatar
-$ ember g ember-cli-gravatar
+npm i --save-dev ember-cli-gravatar
+ember g ember-cli-gravatar
 ```
 
 ## Usage
 
 ```hbs
-{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size="250"}}
+{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 imgClass='img-circle'}}
 ```
 
 ### Content Security Policy
