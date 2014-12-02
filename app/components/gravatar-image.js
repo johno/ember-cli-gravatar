@@ -5,13 +5,15 @@ export default Ember.Component.extend({
   email: '',
   alt: '',
   imgClass: '',
+  default: '',
 
   gravatarUrl: function() {
     var email = this.get('email'),
-        size = this.get('size');
+        size = this.get('size'),
+        def = this.get('default');
 
-    return '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size;
-  }.property('email', 'size'),
+    return '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
+  }.property('email', 'size', 'default'),
 
   altText: function() {
     return this.get('alt') || this.get('email');
