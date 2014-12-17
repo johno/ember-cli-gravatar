@@ -19,8 +19,8 @@ ember g ember-cli-gravatar
 {{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 default='identicon' imgClass='img-circle'}}
 ```
 
-The default property is optional as the size. You can use a encoded url or a default icon name.
-[Gravatar documentation](https://en.gravatar.com/site/implement/images/#default-image)
+The default property is optional as well as the size. You can use a encoded url or a default icon name.
+[Gravatar documentation](https://en.gravatar.com/site/implement/images/#default-image).
 
 ### Content Security Policy
 
