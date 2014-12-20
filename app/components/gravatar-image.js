@@ -4,6 +4,7 @@ export default Ember.Component.extend({
   size: 250,
   email: '',
   alt: '',
+  title: '',
   imgClass: '',
   default: '',
 
