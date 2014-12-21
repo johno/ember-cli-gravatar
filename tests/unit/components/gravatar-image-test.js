@@ -24,3 +24,11 @@ test('it is added to the page', function() {
 
   ok($('img').length);
 });
+
+test('it wraps the img with a span', function() {
+  var component = this.subject();
+  this.append();
+  var wrapperEl = component.$().prop('tagName');
+
+  equal(wrapperEl, 'SPAN');
+});
