@@ -1,15 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  tagName: 'span',
+  tagName: 'img',
+  attributeBindings: ['src', 'alt', 'title'],
   size: 250,
   email: '',
-  alt: '',
   title: '',
-  imgClass: '',
   default: '',
 
-  gravatarUrl: function() {
+  src: function() {
     var email = this.get('email'),
         size = this.get('size'),
         def = this.get('default');
@@ -17,7 +16,7 @@ export default Ember.Component.extend({
     return '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
   }.property('email', 'size', 'default'),
 
-  altText: function() {
-    return this.get('alt') || this.get('email');
-  }.property('alt')
+  alt: function() {
+    return this.get('email');
+  }.property()
 });

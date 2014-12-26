@@ -25,10 +25,11 @@ test('it is added to the page', function() {
   ok($('img').length);
 });
 
-test('it wraps the img with a span', function() {
+test('it does not wrap the img with a span or div but with img', function() {
   var component = this.subject();
   this.append();
   var wrapperEl = component.$().prop('tagName');
 
-  equal(wrapperEl, 'SPAN');
+  notEqual(wrapperEl, 'SPAN');
+  notEqual(wrapperEl, 'DIV');
 });
