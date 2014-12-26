@@ -8,15 +8,13 @@ export default Ember.Component.extend({
   title: '',
   default: '',
 
-  src: function() {
+  src: Ember.computed('email', 'size', 'default', function() {
     var email = this.get('email'),
         size = this.get('size'),
         def = this.get('default');
 
     return '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
-  }.property('email', 'size', 'default'),
+  }),
 
-  alt: function() {
-    return this.get('email');
-  }.property()
+  alt: Ember.computed.alias('email')
 });
