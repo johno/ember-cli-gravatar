@@ -1,20 +1,3 @@
-import Ember from 'ember';
+import gravatarImage from 'ember-cli-gravatar/components/gravatar-image';
 
-export default Ember.Component.extend({
-  tagName: 'img',
-  attributeBindings: ['src', 'alt', 'title'],
-  size: 250,
-  email: '',
-  title: '',
-  default: '',
-
-  src: Ember.computed('email', 'size', 'default', function() {
-    var email = this.get('email'),
-        size = this.get('size'),
-        def = this.get('default');
-
-    return '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
-  }),
-
-  alt: Ember.computed.alias('email')
-});
+export default gravatarImage;

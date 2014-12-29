@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 import {
   moduleForComponent,
   test
@@ -32,4 +34,16 @@ test('it does not wrap the img with a span or div but with img', function() {
 
   notEqual(wrapperEl, 'SPAN');
   notEqual(wrapperEl, 'DIV');
+});
+
+test('it sets the alt attribute', function() {
+  var component = this.subject();
+  this.append();
+
+  Ember.run(function() {
+    component.set('email', 'johnotander@gmail.com');
+  });
+
+  var alt = component.$().prop('alt');
+  equal(alt, 'johnotander@gmail.com');
 });
