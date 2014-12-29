@@ -4,6 +4,8 @@
 
 An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
+See it in action: <http://ember-cli-gravatar.divshot.io/>.
+
 ## Installation
 
 You need to install the addon, then run the ember cli blueprint:
