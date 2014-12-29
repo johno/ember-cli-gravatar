@@ -18,7 +18,7 @@ ember g ember-cli-gravatar
 ## Usage
 
 ```hbs
-{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 default='identicon' imgClass='img-circle'}}
+{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 default='identicon' class='img-circle'}}
 ```
 
 The default property is optional as well as the size. You can use a encoded url or a default icon name.
@@ -39,7 +39,7 @@ module.exports = function(environment) {
       'script-src': "'self'",
       'font-src': "'self'",
       'connect-src': "'self'",
-      'img-src': "'self' https://www.gravatar.com",
+      'img-src': "'self' www.gravatar.com",
       'style-src': "'self'",
       'media-src': "'self'"
     },
