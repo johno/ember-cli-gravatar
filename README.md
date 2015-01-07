@@ -18,11 +18,29 @@ ember g ember-cli-gravatar
 ## Usage
 
 ```hbs
+{{gravatar-image email='johnotander@gmail.com'}}
+```
+
+__An example with multiple options:__
+
+```hbs
 {{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 default='identicon' class='img-circle'}}
 ```
 
 The default property is optional as well as the size. You can use a encoded url or a default icon name.
 [Gravatar documentation](https://en.gravatar.com/site/implement/images/#default-image).
+
+### Required
+
+  * `email`
+
+### Optional
+
+  * `class`
+  * `alt`
+  * `size`
+  * `default`
+  * `title`
 
 ### Content Security Policy
 
