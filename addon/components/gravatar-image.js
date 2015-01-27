@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'img',
-  attributeBindings: ['src', 'alt', 'title'],
+  attributeBindings: ['src', 'alt', 'title', 'class'],
   size: 250,
   email: '',
   title: '',

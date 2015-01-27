@@ -47,3 +47,14 @@ test('it sets the alt attribute', function() {
   var alt = component.$().prop('alt');
   equal(alt, 'johnotander@gmail.com');
 });
+
+test('it sets the class attribute', function() {
+  var component = this.subject();
+  this.append();
+
+  Ember.run(function() {
+    component.set('class', 'my-new-class');
+  });
+
+  ok(component.$().hasClass('my-new-class'));
+});
