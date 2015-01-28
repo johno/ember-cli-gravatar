@@ -8,10 +8,14 @@ See it in action: <http://ember-cli-gravatar.divshot.io/>.
 
 ## Installation
 
-You need to install the addon, then run the ember cli blueprint:
+```
+ember install:addon ember-cli-gravatar
+```
+
+For older versions of Ember CLI:
 
 ```
-npm i --save-dev ember-cli-gravatar
+npm i --save ember-cli-gravatar
 ember g ember-cli-gravatar
 ```
 
