@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-gravatar",
   "version": "2.2.0",
-  "description": "An Ember helper for gravatar image tags. Integrates with ember-cli.",
+  "description": "Component for gravatar image tags.",
   "main": "index.js",
   "scripts": {
     "start": "ember server",
