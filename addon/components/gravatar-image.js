@@ -2,7 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   tagName: 'img',
-  attributeBindings: ['src', 'alt', 'title', 'class'],
+  attributeBindings: ['src', 'alt', 'title'],
+  classNames: ['gravatar-image'],
   size: 250,
   email: '',
   title: '',

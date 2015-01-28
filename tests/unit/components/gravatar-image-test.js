@@ -48,13 +48,9 @@ test('it sets the alt attribute', function() {
   equal(alt, 'johnotander@gmail.com');
 });
 
-test('it sets the class attribute', function() {
+test('it sets the default class attribute', function() {
   var component = this.subject();
   this.append();
 
-  Ember.run(function() {
-    component.set('class', 'my-new-class');
-  });
-
-  ok(component.$().hasClass('my-new-class'));
+  ok(component.$().hasClass('gravatar-image'));
 });
