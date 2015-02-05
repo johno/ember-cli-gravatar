@@ -1,8 +1,14 @@
 # Changelog
 
-## 2.2.1 - 2/5/2015
+## 2.3.0 - 2/5/2015
 
 * Don't alias `alt` as `email`.
+
+If you're using the default alias before, you can still get the same resulting markup with:
+
+```hbs
+{{gravatar-image email=email alt=email}}
+```
 
 ## 2.2.0 - 1/28/2015
 
