@@ -41,11 +41,11 @@ test('it sets the alt attribute', function() {
   this.append();
 
   Ember.run(function() {
-    component.set('email', 'johnotander@gmail.com');
+    component.set('alt', 'John\'s Avatar');
   });
 
   var alt = component.$().prop('alt');
-  equal(alt, 'johnotander@gmail.com');
+  equal(alt, 'John\'s Avatar');
 });
 
 test('it sets the default class attribute', function() {

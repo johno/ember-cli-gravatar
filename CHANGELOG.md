@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.1 - 2/5/2015
+
+* Don't alias `alt` as `email`.
+
 ## 2.2.0 - 1/28/2015
 
 * Don't use class in `attributeNameBindings`, use `classNames` instead with the default of `gravatar-image`.
