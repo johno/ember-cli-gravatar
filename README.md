@@ -1,6 +1,4 @@
-# Gravatar Image Tag
-
-[![Build Status](https://travis-ci.org/johnotander/ember-cli-gravatar.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-gravatar)
+# Ember Gravatar [![Build Status](https://travis-ci.org/johnotander/ember-cli-gravatar.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-gravatar)
 
 An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
@@ -8,13 +6,13 @@ See it in action: <http://ember-cli-gravatar.divshot.io/>.
 
 ## Installation
 
-```
+```bash
 ember install:addon ember-cli-gravatar
 ```
 
-For older versions of Ember CLI:
+For older versions of the Ember CLI:
 
-```
+```bash
 npm i --save ember-cli-gravatar
 ember g ember-cli-gravatar
 ```
