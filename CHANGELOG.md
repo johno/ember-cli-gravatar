@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.4.0 - 2/19/2015
+
+* Use a shim for `md5`
+* Remove need for .jshintrc config
+
 ## 2.3.0 - 2/5/2015
 
 * Don't alias `alt` as `email`.
