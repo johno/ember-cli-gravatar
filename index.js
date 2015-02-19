@@ -8,7 +8,7 @@ module.exports = {
     this._super.included(app);
 
     app.import(app.bowerDirectory + '/JavaScript-MD5/js/md5.js');
-    app.import('vendor/ember-cli-gravatar/md5-shim.js, {
+    app.import('vendor/ember-cli-gravatar/md5-shim.js', {
       type: 'vendor',
       exports: { 'md5': ['md5'] }
     });

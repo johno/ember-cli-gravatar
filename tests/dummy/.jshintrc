@@ -1,6 +1,5 @@
 {
   "predef": {
-    "md5": true,
     "document": true,
     "window": true,
     "-Promise": true

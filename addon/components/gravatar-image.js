@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import md5 from 'md5';
 
 export default Ember.Component.extend({
   tagName: 'img',
