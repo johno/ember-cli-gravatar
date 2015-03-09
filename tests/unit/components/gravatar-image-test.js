@@ -10,47 +10,47 @@ moduleForComponent('gravatar-image', 'GravatarImageComponent', {
   // needs: ['component:foo', 'helper:bar']
 });
 
-test('it renders', function() {
+test('it renders', function(assert) {
   // creates the component instance
   var component = this.subject();
-  equal(component._state, 'preRender');
+  assert.equal(component._state, 'preRender');
 
   // appends the component to the page
   this.append();
-  equal(component._state, 'inDOM');
+  assert.equal(component._state, 'inDOM');
 });
 
-test('it is added to the page', function() {
+test('it is added to the page', function(assert) {
   var component = this.subject();
   this.append();
 
-  ok($('img').length);
+  assert.ok($('img').length);
 });
 
-test('it does not wrap the img with a span or div but with img', function() {
+test('it does not wrap the img with a span or div but with img', function(assert) {
   var component = this.subject();
   this.append();
   var wrapperEl = component.$().prop('tagName');
 
-  notEqual(wrapperEl, 'SPAN');
-  notEqual(wrapperEl, 'DIV');
+  assert.notEqual(wrapperEl, 'SPAN');
+  assert.notEqual(wrapperEl, 'DIV');
 });
 
-test('it sets the alt attribute', function() {
+test('it sets the alt attribute', function(assert) {
   var component = this.subject();
   this.append();
 
-  Ember.run(function() {
+  Ember.run(function(assert) {
     component.set('alt', 'John\'s Avatar');
   });
 
   var alt = component.$().prop('alt');
-  equal(alt, 'John\'s Avatar');
+  assert.equal(alt, 'John\'s Avatar');
 });
 
-test('it sets the default class attribute', function() {
+test('it sets the default class attribute', function(assert) {
   var component = this.subject();
   this.append();
 
-  ok(component.$().hasClass('gravatar-image'));
+  assert.ok(component.$().hasClass('gravatar-image'));
 });

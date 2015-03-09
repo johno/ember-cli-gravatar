@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.1 - 3/9/2015
+
+Upgrade ember-cli version.
+
 ## 2.4.0 - 2/19/2015
 
 * Use a shim for `md5`
