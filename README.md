@@ -1,4 +1,4 @@
-# Ember Gravatar [![Build Status](https://travis-ci.org/johnotander/ember-cli-gravatar.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-gravatar)
+# ember-cli-gravatar [![Build Status](https://travis-ci.org/johnotander/ember-cli-gravatar.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-gravatar)
 
 An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
 
