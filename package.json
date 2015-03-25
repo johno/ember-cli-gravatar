@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-gravatar",
-  "version": "2.4.1",
+  "version": "2.4.2",
   "description": "Component for gravatar image tags.",
   "main": "index.js",
   "scripts": {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.2 - 3/25/2015
+
+Add ember observer badge.
+
 ## 2.4.1 - 3/9/2015
 
 Upgrade ember-cli version.
