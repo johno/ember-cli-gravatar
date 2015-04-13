@@ -9,12 +9,14 @@ export default Ember.Component.extend({
   email: '',
   title: '',
   default: '',
+  secure: false,
 
   src: Ember.computed('email', 'size', 'default', function() {
     var email = this.get('email'),
         size = this.get('size'),
-        def = this.get('default');
+        def = this.get('default'),
+        secure = this.get("secure");
 
-    return '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
+    return (secure? "https" : "http") + '://www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
   })
 });
