@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.1 - 4/15/2015
+
+Update documentation.
+
 ## 3.0.0 - 4/15/2015
 
 * Changes the `default` property to `defaultImage`.
