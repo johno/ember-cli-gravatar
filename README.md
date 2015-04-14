@@ -6,15 +6,16 @@ See it in action: <http://ember-cli-gravatar.divshot.io/>.
 
 ## Installation
 
-```bash
-ember install:addon ember-cli-gravatar
+For Ember CLI >= `0.2.3`
+
+```
+ember install ember-cli-gravatar
 ```
 
-For older versions of the Ember CLI:
+For Ember CLI < `0.2.3`
 
-```bash
-npm i --save ember-cli-gravatar
-ember g ember-cli-gravatar
+```
+ember install:addon ember-cli-gravatar
 ```
 
 ## Usage
