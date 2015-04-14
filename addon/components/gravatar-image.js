@@ -18,11 +18,11 @@ export default Ember.Component.extend({
         secure = this.get("secure"),
         protocol;
     if(secure===null){
-      protocol = ''
+      protocol = '';
     } else if (secure===false){
-      protocol = 'http:'
+      protocol = 'http:';
     } else{
-      protocol = 'https:'
+      protocol = 'https:';
     }
     return protocol + '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
   })
