@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.2 - 4/14/2-15
+
+Wrap the `default` property in quotes to stop some browsers from complaining.
+
 ## 2.5.1 - 4/13/2015
 
 Update the installation instructions for the latest ember-cli version.
