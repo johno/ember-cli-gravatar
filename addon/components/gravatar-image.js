@@ -9,14 +9,21 @@ export default Ember.Component.extend({
   email: '',
   title: '',
   default: '',
-  secure: false,
+  secure: null,
 
   src: Ember.computed('email', 'size', 'default', function() {
     var email = this.get('email'),
         size = this.get('size'),
         def = this.get('default'),
-        secure = this.get("secure");
-
-    return (secure? "https" : "http") + '://www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
+        secure = this.get("secure"),
+        protocol;
+    if(secure===null){
+      protocol = ''
+    } else if (secure===false){
+      protocol = 'http:'
+    } else{
+      protocol = 'https:'
+    }
+    return protocol + '//www.gravatar.com/avatar/' + md5(email) + '?s=' + size + '&d=' + def;
   })
 });
