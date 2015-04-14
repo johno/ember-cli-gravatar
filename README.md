@@ -44,7 +44,7 @@ The default property is optional as well as the size. You can use a encoded url 
   * `size` *Number* - size of the image. Default: `250`.
   * `defaultImage` *String* - the default image to be used in case the email doesn't have a gravatar.
   * `title` *String* - the title attribute for the image. Default: none.
-  * `secure` *Boolean* - whether `http` or `https` is used. Default: `false`.
+  * `secure` *Boolean* - whether `http` or `https` is used. Default: `true`.
 
 ### Content Security Policy
 
