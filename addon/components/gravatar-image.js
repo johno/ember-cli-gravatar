@@ -8,7 +8,7 @@ export default Ember.Component.extend({
   size: 250,
   email: '',
   title: '',
-  default: '',
+  'default': '',
   secure: null,
 
   src: Ember.computed('email', 'size', 'default', function() {
