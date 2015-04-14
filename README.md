@@ -27,7 +27,7 @@ ember install:addon ember-cli-gravatar
 __An example with multiple options:__
 
 ```hbs
-{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 default='identicon' class='img-circle' secure=false}}
+{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 defaultImage='identicon' class='img-circle' secure=false title='John Otander'}}
 ```
 
 The default property is optional as well as the size. You can use a encoded url or a default icon name.
