@@ -27,7 +27,7 @@ ember install:addon ember-cli-gravatar
 __An example with multiple options:__
 
 ```hbs
-{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 default='identicon' class='img-circle' secure=true}}
+{{gravatar-image email='johnotander@gmail.com' alt='John Otander gravatar' size=250 default='identicon' class='img-circle' secure=false}}
 ```
 
 The default property is optional as well as the size. You can use a encoded url or a default icon name.
@@ -35,16 +35,16 @@ The default property is optional as well as the size. You can use a encoded url 
 
 ### Required
 
-  * `email`
+  * `email` *String* - the email for the gravatar.
 
 ### Optional
 
-  * `class`
-  * `alt`
-  * `size`
-  * `default`
-  * `title`
-  * `secure`
+  * `class` *String* - any HTML classes to apply to the image. Default: `gravatar-image`.
+  * `alt` *String* - alt description of the avatar. Default: none.
+  * `size` *Number* - size of the image. Default: none.
+  * `defaultImage` *String* - the default image to be used in case the email doesn't have a gravatar.
+  * `title` *String* - the title attribute for the image. Default: none.
+  * `secure` *Boolean* - whether `http` or `https` is used. Default: `false`.
 
 ### Content Security Policy
 
