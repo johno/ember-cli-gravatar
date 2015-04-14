@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.1 - 4/13/2015
+
+Update the installation instructions for the latest ember-cli version.
+
 ## 2.5.0 - 4/13/2015
 
 Add support for the `secure` option to specify a protocol for the url.
