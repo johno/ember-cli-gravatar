@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.0 - 4/13/2015
+
+Add support for the `secure` option to specify a protocol for the url.
+
 ## 2.4.2 - 3/25/2015
 
 Add ember observer badge.
