@@ -1,6 +1,11 @@
 # Changelog
 
-## 2.5.2 - 4/14/2-15
+## 3.0.0 - 4/15/2015
+
+* Changes the `default` property to `defaultImage`.
+* Defaults to `https` and now requires `secure=false` to be passed for `http`.
+
+## 2.5.2 - 4/14/2015
 
 Wrap the `default` property in quotes to stop some browsers from complaining.
 
