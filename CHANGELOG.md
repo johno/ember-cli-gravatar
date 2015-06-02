@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.2 - 6/2/2015
+
+Add `tmp/` to npmignore.
+
 ## 3.0.1 - 4/15/2015
 
 Update documentation.
