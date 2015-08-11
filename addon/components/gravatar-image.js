@@ -3,7 +3,7 @@ import md5 from 'md5';
 
 export default Ember.Component.extend({
   tagName: 'img',
-  attributeBindings: ['src', 'alt', 'title'],
+  attributeBindings: ['src', 'alt', 'title', 'size:height', 'size:width'],
   classNames: ['gravatar-image'],
   size: 250,
   email: '',
