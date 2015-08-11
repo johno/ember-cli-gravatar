@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.1 - 8/11/2015
+
+Add documentation for the `retina` attribute.
+
 ## 3.1.0 - 8/11/2015
 
 Add support for retina gravatars.
