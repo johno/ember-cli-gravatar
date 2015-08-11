@@ -22,7 +22,7 @@ export default Ember.Component.extend({
     return protocol + '://www.gravatar.com/avatar/' + md5(email) + '?s=' + imageSize + '&d=' + def;
   }),
 
-  imageSize: Ember.computed('size', function() {
+  imageSize: Ember.computed('size', 'retina', function() {
     var size = this.get('size');
     return this.get('retina') ? (size * 2) : size;
   })
