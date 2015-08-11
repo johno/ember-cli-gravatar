@@ -54,3 +54,18 @@ test('it sets the default class attribute', function(assert) {
 
   assert.ok(component.$().hasClass('gravatar-image'));
 });
+
+test('it renders at retina resolution', function(assert) {
+  var component = this.subject();
+  this.append();
+
+  Ember.run(function(assert) {
+    component.set('retina', true);
+  });
+
+  var size = component.get('size');
+  var imageSize = component.get('imageSize');
+  var imageHeight = component.$().height();
+
+  assert.equal(size, imageHeight, imageSize / 2);
+});
