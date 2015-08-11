@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.1.0 - 8/11/2015
+
+Add support for retina gravatars.
+
+```hbs
+{{gravatar-image email=email alt=alt size=size class=class retina=retina}}
+```
+
 ## 3.0.2 - 6/2/2015
 
 Add `tmp/` to npmignore.
