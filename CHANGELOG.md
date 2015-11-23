@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.3.0 - 11/23/2015
+
+* Upgrade to the latest version of the `ember-cli`
+* Use `blueimp-md5` instead of `JavaScript-MD5`
+
 ## 3.1.1 - 8/11/2015
 
 Add documentation for the `retina` attribute.
