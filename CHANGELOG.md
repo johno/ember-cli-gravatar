@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.4.0 - 11/23/2015
+
+Add the ability to pass an md5 hash to the component.
+
+```hbs
+{{gravatar-image hash=someEmailHash}}
+```
+
 ## 3.3.1 - 11/23/2015
 
 * Correctly install `blueimp-md5`

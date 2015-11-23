@@ -44,6 +44,7 @@ The default property is optional as well as the size. You can use a encoded url 
   * `title` *String* - the title attribute for the image. Default: none.
   * `secure` *Boolean* - whether `http` or `https` is used. Default: `true`.
   * `retina` *Boolean* - whether retina image is used. Default: `false`.
+  * `hash` *String* - pass an md5 hash of an email. Default: none.
 
 ### Content Security Policy
 
