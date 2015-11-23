@@ -27,6 +27,20 @@ test('it is added to the page', function(assert) {
   assert.ok($('img').length);
 });
 
+test('it allows an md5 hash to be passed', function(assert) {
+  const hash = '2e52ef263083c77e2a0a24454dc6f369';
+
+  var component = this.subject();
+  this.append();
+
+  Ember.run(function() {
+    component.set('hash', hash);
+  });
+
+  const src = component.$().prop('src');
+  assert.equal(src, 'https://www.gravatar.com/avatar/' + hash + '?s=250&d=');
+});
+
 test('it does not wrap the img with a span or div but with img', function(assert) {
   var component = this.subject();
   this.append();
