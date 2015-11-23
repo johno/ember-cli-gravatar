@@ -21,7 +21,7 @@ test('it renders', function(assert) {
 });
 
 test('it is added to the page', function(assert) {
-  var component = this.subject();
+  this.subject();
   this.append();
 
   assert.ok($('img').length);
@@ -40,7 +40,7 @@ test('it sets the alt attribute', function(assert) {
   var component = this.subject();
   this.append();
 
-  Ember.run(function(assert) {
+  Ember.run(function() {
     component.set('alt', 'John\'s Avatar');
   });
 
@@ -59,7 +59,7 @@ test('it renders at retina resolution', function(assert) {
   var component = this.subject();
   this.append();
 
-  Ember.run(function(assert) {
+  Ember.run(function() {
     component.set('retina', true);
   });
 
