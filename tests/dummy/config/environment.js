@@ -7,14 +7,14 @@ module.exports = function(environment) {
     baseURL: '/',
     locationType: 'auto',
     contentSecurityPolicy: {
-      'default-src': "'none'",
-      'script-src': "'self'",
-      'font-src': "'self'",
-      'frame-src': "'self'",
-      'connect-src': "'self'",
-      'img-src': "'self' www.gravatar.com",
-      'style-src': "'self'",
-      'media-src': "'self'"
+      'defaultsrc': "'none'",
+      'scriptsrc': "'self'",
+      'fontsrc': "'self'",
+      'framesrc': "'self'",
+      'connectsrc': "'self'",
+      'imgsrc': "'self' www.gravatar.com",
+      'stylesrc': "'self'",
+      'mediasrc': "'self'"
     },
     EmberENV: {
       FEATURES: {
