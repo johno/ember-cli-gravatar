@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.3.1 - 11/23/2015
+
+* Correctly install `blueimp-md5`
+
 ## 3.3.0 - 11/23/2015
 
 * Upgrade to the latest version of the `ember-cli`

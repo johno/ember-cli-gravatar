@@ -2,6 +2,6 @@ module.exports = {
   normalizeEntityName: function() {},
 
   afterInstall: function(options) {
-    return this.addBowerPackageToProject('JavaScript-MD5');
+    return this.addBowerPackageToProject('blueimp-md5');
   }
 };
