@@ -1,21 +1,13 @@
 # ember-cli-gravatar [![Build Status](https://travis-ci.org/johnotander/ember-cli-gravatar.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-gravatar) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-gravatar.svg)](http://emberobserver.com/addons/ember-cli-gravatar)
 
-An [ember-cli](http://ember-cli.com) addon for a gravatar image component.
+An ember addon for [Gravatar](https://gravatar.com) components.
 
 See it in action: <http://ember-cli-gravatar.divshot.io/>.
 
 ## Installation
 
-For Ember CLI >= `0.2.3`
-
 ```
 ember install ember-cli-gravatar
-```
-
-For Ember CLI < `0.2.3`
-
-```
-ember install:addon ember-cli-gravatar
 ```
 
 ## Usage
@@ -90,4 +82,5 @@ MIT
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-Crafted with <3 by [John Otander](http://johnotander.com).
+***
+> Crafted with <3 by [John Otander](https://twitter.com/4lpine).
