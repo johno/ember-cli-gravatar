@@ -12,6 +12,6 @@
     "jquery": "^1.11.3",
     "loader.js": "ember-cli/loader.js#3.4.0",
     "qunit": "~1.20.0",
-    "blueimp-md5": "JavaScript-MD5#~1.1.1"
+    "blueimp-md5": "~1.1.1"
   }
 }
