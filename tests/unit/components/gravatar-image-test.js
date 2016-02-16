@@ -6,23 +6,20 @@ import {
 } from 'ember-qunit';
 
 moduleForComponent('gravatar-image', 'GravatarImageComponent', {
-  // specify the other units that are required for this test
-  // needs: ['component:foo', 'helper:bar']
+  needs: []
 });
 
 test('it renders', function(assert) {
-  // creates the component instance
   var component = this.subject();
   assert.equal(component._state, 'preRender');
 
-  // appends the component to the page
-  this.append();
+  this.render();
   assert.equal(component._state, 'inDOM');
 });
 
 test('it is added to the page', function(assert) {
   this.subject();
-  this.append();
+  this.render();
 
   assert.ok($('img').length);
 });
@@ -31,7 +28,7 @@ test('it allows an md5 hash to be passed', function(assert) {
   const hash = '2e52ef263083c77e2a0a24454dc6f369';
 
   var component = this.subject();
-  this.append();
+  this.render();
 
   Ember.run(function() {
     component.set('hash', hash);
@@ -43,7 +40,7 @@ test('it allows an md5 hash to be passed', function(assert) {
 
 test('it does not wrap the img with a span or div but with img', function(assert) {
   var component = this.subject();
-  this.append();
+  this.render();
   var wrapperEl = component.$().prop('tagName');
 
   assert.notEqual(wrapperEl, 'SPAN');
@@ -52,7 +49,7 @@ test('it does not wrap the img with a span or div but with img', function(assert
 
 test('it sets the alt attribute', function(assert) {
   var component = this.subject();
-  this.append();
+  this.render();
 
   Ember.run(function() {
     component.set('alt', 'John\'s Avatar');
@@ -64,14 +61,14 @@ test('it sets the alt attribute', function(assert) {
 
 test('it sets the default class attribute', function(assert) {
   var component = this.subject();
-  this.append();
+  this.render();
 
   assert.ok(component.$().hasClass('gravatar-image'));
 });
 
 test('it renders at retina resolution', function(assert) {
   var component = this.subject();
-  this.append();
+  this.render();
 
   Ember.run(function() {
     component.set('retina', true);
