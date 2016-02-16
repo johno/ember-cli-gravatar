@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.5.0 - 2/16/1016
+
+Update `ember-cli` to `2.3.0`.
+
 ## 3.4.0 - 11/23/2015
 
 Add the ability to pass an md5 hash to the component.
