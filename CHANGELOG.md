@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.6.0 - 4/11/2016
+
+Modify the app assignment so that it plays nice with
+peer addons.
+
 ## 3.5.0 - 2/16/1016
 
 Update `ember-cli` to `2.3.0`.
