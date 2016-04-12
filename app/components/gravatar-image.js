@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-gravatar/components/gravatar-image';
+export { default } from 'ember-gravatar/components/gravatar-image';

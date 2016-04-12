@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-gravatar",
+  "name": "ember-gravatar",
   "version": "3.6.0",
   "description": "Component for gravatar image tags",
   "directories": {
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "johnotander/ember-cli-gravatar",
+  "repository": "johnotander/ember-gravatar",
   "engines": {
     "node": ">= 0.10.0"
   },

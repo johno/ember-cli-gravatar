@@ -1,13 +1,13 @@
-# ember-cli-gravatar [![Build Status](https://travis-ci.org/johnotander/ember-cli-gravatar.svg?branch=master)](https://travis-ci.org/johnotander/ember-cli-gravatar) [![Ember Observer Score](http://emberobserver.com/badges/ember-cli-gravatar.svg)](http://emberobserver.com/addons/ember-cli-gravatar)
+# ember-gravatar [![Build Status](https://travis-ci.org/johnotander/ember-gravatar.svg?branch=master)](https://travis-ci.org/johnotander/ember-gravatar) [![Ember Observer Score](http://emberobserver.com/badges/ember-gravatar.svg)](http://emberobserver.com/addons/ember-gravatar)
 
 An ember addon for [Gravatar](https://gravatar.com) components.
 
-See it in action: <http://ember-cli-gravatar.divshot.io/>.
+See it in action: <http://ember-gravatar.divshot.io/>.
 
 ## Installation
 
 ```
-ember install ember-cli-gravatar
+ember install ember-gravatar
 ```
 
 ## Usage
