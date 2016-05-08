@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.0.0
+
+Deprecate `ember-cli-gravatar` and rename to `ember-gravatar`.
+
 ## 3.6.0 - 4/11/2016
 
 Modify the app assignment so that it plays nice with
