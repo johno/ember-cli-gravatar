@@ -71,6 +71,22 @@ module.exports = function(environment) {
 };
 ```
 
+### Has gravatar
+
+Additional component that can be used to determine if a user has a gravatar before decidiing to show it.
+
+Usage:
+
+```hbs
+{{#has-gravatar email='test@gmail.com' as |g|}}
+  {{#if g.has}}
+    {{g.image}}
+  {{else}}
+    No gravatar found!
+  {{/if}}
+{{/has-gravatar}}
+```
+
 ## License
 
 MIT
