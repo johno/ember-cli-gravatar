@@ -1,22 +1,28 @@
 import Ember from 'ember';
 import layout from '../templates/components/has-gravatar';
-import md5 from 'md5';
 
-export default Ember.Component.extend({
+const {
+  Component,
+  getProperties,
+  inject: { service },
+  set
+} = Ember;
+
+export default Component.extend({
+  gravatar: service(),
+
   init(...args) {
-    const email = this.get('email');
-    const hash = md5(email);
-
     this._super(...args);
 
-    return Ember.$.ajax(`http://www.gravatar.com/avatar/${hash}?d=404`, {
-      complete: ({ status })=> {
+    const { email, gravatar } = getProperties(this, 'email', 'gravatar');
+
+    return gravatar.hasGravatar(email)
+      .then((status)=> {
         const NOT_FOUND = 404;
 
-        this.set('has', (status !== NOT_FOUND));
-        this.set('checking', false);
-      }
-    });
+        set(this, 'has', (status !== NOT_FOUND));
+        set(this, 'checking', false);
+      });
   },
 
   layout,
