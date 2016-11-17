@@ -8,7 +8,7 @@ const {
 
 
 export default Service.extend({
-  hasGravatar([email]) {
+  hasGravatar(email) {
     if (!email) {
       throw new Error('expecting email');
     }

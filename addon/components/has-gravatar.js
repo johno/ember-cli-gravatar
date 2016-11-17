@@ -17,10 +17,8 @@ export default Component.extend({
     const { email, gravatar } = getProperties(this, 'email', 'gravatar');
 
     return gravatar.hasGravatar(email)
-      .then((status)=> {
-        const NOT_FOUND = 404;
-
-        set(this, 'has', (status !== NOT_FOUND));
+      .then((has)=> {
+        set(this, 'has', has);
         set(this, 'checking', false);
       });
   },
