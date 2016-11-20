@@ -2,8 +2,6 @@
 
 An ember addon for [Gravatar](https://gravatar.com) components.
 
-See it in action: <http://ember-cli-gravatar.divshot.io/>.
-
 ## Installation
 
 ```
