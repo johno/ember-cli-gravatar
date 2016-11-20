@@ -73,7 +73,7 @@ module.exports = function(environment) {
 
 ### Has gravatar
 
-Additional component that can be used to determine if a user has a gravatar before decidiing to show it.
+Additional component that can be used to determine if a user has a gravatar before deciding to show it.
 
 Usage:
 
