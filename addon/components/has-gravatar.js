@@ -14,9 +14,9 @@ export default Component.extend({
   init(...args) {
     this._super(...args);
 
-    const { email, gravatar } = getProperties(this, 'email', 'gravatar');
+    const { email, gravatar, secure } = getProperties(this, 'email', 'gravatar', 'secure');
 
-    return gravatar.hasGravatar(email)
+    return gravatar.hasGravatar(email, secure)
       .then((has)=> {
         set(this, 'has', has);
         set(this, 'checking', false);
@@ -26,5 +26,6 @@ export default Component.extend({
   layout,
   has: false,
   checking: true,
-  email: ''
+  email: '',
+  secure: false
 });
