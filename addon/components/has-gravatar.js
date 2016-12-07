@@ -17,14 +17,14 @@ export default Component.extend({
     const { email, gravatar, secure } = getProperties(this, 'email', 'gravatar', 'secure');
 
     return gravatar.hasGravatar(email, secure)
-      .then((has)=> {
-        set(this, 'has', has);
+      .then((hasGravatar)=> {
+        set(this, 'hasGravatar', hasGravatar);
         set(this, 'checking', false);
       });
   },
 
   layout,
-  has: false,
+  hasGravatar: false,
   checking: true,
   email: '',
   secure: false
