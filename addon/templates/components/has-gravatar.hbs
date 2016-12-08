@@ -1,6 +1,6 @@
 {{#unless checking}}
   {{yield (hash
-    has=has
+    has=hasGravatar
     image=(component 'gravatar-image' email=email secure=secure)
   )}}
 {{/unless}}
