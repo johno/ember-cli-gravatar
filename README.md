@@ -23,7 +23,8 @@ __An example with multiple options:__
   defaultImage='identicon'
   class='img-circle'
   secure=false
-  size=250}}
+  size=250
+  retina=true}}
 ```
 
 The default property is optional as well as the size. You can use a encoded url or a default icon name.
