@@ -11,8 +11,8 @@ const {
 export default Component.extend({
   gravatar: service(),
 
-  init(...args) {
-    this._super(...args);
+  didReceiveAttrs() {
+    this._super(...arguments);
 
     const { email, gravatar, secure } = getProperties(this, 'email', 'gravatar', 'secure');
 
