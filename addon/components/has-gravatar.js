@@ -27,5 +27,5 @@ export default Component.extend({
   hasGravatar: false,
   checking: true,
   email: '',
-  secure: false
+  secure: true
 });
