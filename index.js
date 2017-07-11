@@ -9,12 +9,22 @@ module.exports = {
   name: 'ember-cli-gravatar',
 
   included: function included(app) {
-    // workaround for https://github.com/ember-cli/ember-cli/issues/3718
-    if (typeof app.import !== 'function' && app.app) {
-      app = app.app;
+    this._super.included.apply(this, arguments);
+
+    // If the addon has the _findHost() method (in ember-cli >= 2.7.0), we'll just
+    // use that.
+    if (typeof this._findHost === 'function') {
+      app = this._findHost();
     }
-    this.app = app;
-    this._super.included(app);
+
+    // Otherwise, we'll use this implementation borrowed from the _findHost()
+    // method in ember-cli.
+    // Keep iterating upward until we don't have a grandparent.
+    // Has to do this grandparent check because at some point we hit the project.
+    let current = this;
+    do {
+     app = current.app || app;
+    } while (current.parent.parent && (current = current.parent));
 
     app.import('vendor/md5.js');
     app.import('vendor/ember-cli-gravatar/md5-shim.js', {
