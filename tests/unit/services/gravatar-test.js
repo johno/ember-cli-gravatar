@@ -6,7 +6,7 @@ test('does not have gravatar', function(assert) {
   const service = this.subject();
   const done = assert.async();
 
-  service.hasGravatar(['foo'])
+  service.hasGravatar(['foo'], true, 'www.gravatar.com')
     .then((result)=> {
       assert.equal(result, false);
       done();
@@ -17,9 +17,20 @@ test('does have a gravatar', function(assert) {
   const service = this.subject();
   const done = assert.async();
 
-  service.hasGravatar(['orahoske.2@gmail.com'])
+  service.hasGravatar(['orahoske.2@gmail.com'], true, 'www.gravatar.com')
     .then((result)=> {
       assert.equal(result, true);
+      done();
+    });
+});
+
+test('returns false if it cannot lookup the domain', function(assert) {
+  const service = this.subject();
+  const done = assert.async();
+
+  service.hasGravatar(['orahoske.2@gmail.com'], true, 'doesnotexist.example.com')
+    .then((result)=> {
+      assert.equal(result, false);
       done();
     });
 });

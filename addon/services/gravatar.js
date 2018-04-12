@@ -8,7 +8,7 @@ const {
 
 
 export default Service.extend({
-  hasGravatar(email, secure) {
+  hasGravatar(email, secure, gravatarHost) {
     if (!email) {
       throw new Error('expecting email');
     }
@@ -16,11 +16,12 @@ export default Service.extend({
     const hash = md5(email);
 
     return new Promise((resolve)=> {
-      ajax(`http${secure ? 's': ''}://www.gravatar.com/avatar/${hash}?d=404`, {
-        complete: ({ status })=> {
-          const NOT_FOUND = 404;
-
-          resolve((status !== NOT_FOUND));
+      ajax(`http${secure ? 's': ''}://${gravatarHost}/avatar/${hash}?d=404`, {
+        complete: function() {
+          resolve(true);
+        },
+        error: function() {
+          resolve(false);
         }
       });
     });
