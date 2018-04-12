@@ -16,7 +16,7 @@ export default Component.extend({
 
     const { email, gravatar, secure } = getProperties(this, 'email', 'gravatar', 'secure');
 
-    return gravatar.hasGravatar(email, secure)
+    return gravatar.hasGravatar(email, secure, 'www.gravatar.com')
       .then((hasGravatar)=> {
         set(this, 'hasGravatar', hasGravatar);
         set(this, 'checking', false);
